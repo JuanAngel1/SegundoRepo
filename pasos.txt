@@ -1,0 +1,147 @@
+juani@LAPTOP-QVO89F6O MINGW64 /d/VERANOS/SegundoRepo (master)oRepo (master)
+$ touch alumno1.py alumno2.py alumno3.py readme.md
+
+juani@LAPTOP-QVO89F6O MINGW64 /d/VERANOS/SegundoRepo (master)
+$ git add alumno1.py alumno2.py alumno3.py     
+
+juani@LAPTOP-QVO89F6O MINGW64 /d/VERANOS/SegundoRepo (master)
+$ git commit -m "add alumno 1,2,3"
+[master (root-commit) 57d7e55] add alumno 1,2,3
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 alumno1.py
+ create mode 100644 alumno2.py
+ create mode 100644 alumno3.py
+
+juani@LAPTOP-QVO89F6O MINGW64 /d/VERANOS/SegundoRepo (master)
+$ git add readme.md
+
+juani@LAPTOP-QVO89F6O MINGW64 /d/VERANOS/SegundoRepo (master)
+$ git commit -m "add readme"
+[master a68d0ce] add readme
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 readme.md
+
+juani@LAPTOP-QVO89F6O MINGW64 /d/VERANOS/SegundoRepo (master)
+$ git add alumno1.py
+
+juani@LAPTOP-QVO89F6O MINGW64 /d/VERANOS/SegundoRepo (master)
+$ git add alumno2.py
+
+juani@LAPTOP-QVO89F6O MINGW64 /d/VERANOS/SegundoRepo (master)
+$ git add alumno3.py
+
+juani@LAPTOP-QVO89F6O MINGW64 /d/VERANOS/SegundoRepo (master)
+$ git commit -m "add saludo"
+[master 9848f58] add saludo
+ 3 files changed, 3 insertions(+)
+
+juani@LAPTOP-QVO89F6O MINGW64 /d/VERANOS/SegundoRepo (master)
+$ git add alumno3.py
+
+juani@LAPTOP-QVO89F6O MINGW64 /d/VERANOS/SegundoRepo (master)
+$ git commit -m "saludos"
+[master ebdcbb0] saludos
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+juani@LAPTOP-QVO89F6O MINGW64 /d/VERANOS/SegundoRepo (master)
+$ git status
+On branch master
+Your branch is based on 'origin/master', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+nothing to commit, working tree clean
+
+juani@LAPTOP-QVO89F6O MINGW64 /d/VERANOS/SegundoRepo (master)
+$ git status
+On branch master
+Your branch is based on 'origin/master', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   alumno3.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+juani@LAPTOP-QVO89F6O MINGW64 /d/VERANOS/SegundoRepo (master)
+$ git add alumno3.py
+
+juani@LAPTOP-QVO89F6O MINGW64 /d/VERANOS/SegundoRepo (master)
+$ git status
+On branch master
+Your branch is based on 'origin/master', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   alumno3.py
+
+
+juani@LAPTOP-QVO89F6O MINGW64 /d/VERANOS/SegundoRepo (master)
+$ git restore --staged alumno3.py
+
+juani@LAPTOP-QVO89F6O MINGW64 /d/VERANOS/SegundoRepo (master)
+$ git status
+On branch master
+Your branch is based on 'origin/master', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   alumno3.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+juani@LAPTOP-QVO89F6O MINGW64 /d/VERANOS/SegundoRepo (master)
+$ git restore alumno3.py
+
+juani@LAPTOP-QVO89F6O MINGW64 /d/VERANOS/SegundoRepo (master)
+$ git log
+commit ebdcbb080ff8b154f2275599b7ab6d42a1952eeb (HEAD -> master)
+Author: JuanAngel1 <juanito_2600@hotmail.com>
+Date:   Wed Jul 22 11:06:29 2020 -0500
+
+    saludos
+
+commit 9848f5807839e475c048b60f8ccbc11c8d4335a6
+Author: JuanAngel1 <juanito_2600@hotmail.com>
+Date:   Wed Jul 22 11:03:22 2020 -0500
+
+    add saludo
+
+commit a68d0ce5f005c282f6baba1e875b6fb4610534b5
+Author: JuanAngel1 <juanito_2600@hotmail.com>
+
+juani@LAPTOP-QVO89F6O MINGW64 /d/VERANOS/SegundoRepo (master)
+$ git add alumno1.py
+
+juani@LAPTOP-QVO89F6O MINGW64 /d/VERANOS/SegundoRepo (master)
+$ git add alumno2.py
+
+juani@LAPTOP-QVO89F6O MINGW64 /d/VERANOS/SegundoRepo (master)
+$ git add alumno3.py
+
+juani@LAPTOP-QVO89F6O MINGW64 /d/VERANOS/SegundoRepo (master)
+$ git add readme.md
+
+juani@LAPTOP-QVO89F6O MINGW64 /d/VERANOS/SegundoRepo (master)
+$ git commit -m "Termine"
+On branch master
+Your branch is based on 'origin/master', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+nothing to commit, working tree clean
+
+juani@LAPTOP-QVO89F6O MINGW64 /d/VERANOS/SegundoRepo (master)
+$ git push
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (11/11), 919 bytes | 306.00 KiB/s, done.
+Total 11 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/JuanAngel1/SegundoRepo.git
+ * [new branch]      master -> master
